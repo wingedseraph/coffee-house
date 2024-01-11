@@ -1,0 +1,613 @@
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Coffee-House: Menu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="menu.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="index.js"></script>
+    <script type="module" src="menu.js"></script>
+  </head>
+
+  <body>
+    <div class="loader-container loaded">
+      <div class="loader"></div>
+    </div>
+    <div class="container">
+      <header class="header header-menu">
+        <a href="index.html"><img src="./assets/logo.svg" alt="logo" /></a>
+        <nav class="nav nav-menu">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html#favorite" class="menu-link"
+                >Favorite coffee</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="index.html#about" class="menu-link">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="index.html#mobile" class="menu-link">Mobile app</a>
+            </li>
+            <li class="menu-item">
+              <a href="menu.html#contact-us" class="menu-link">Contact us</a>
+            </li>
+          </ul>
+          <p class="menu-active menu-link-hard nav">
+            <span class="desktop-img nav">Menu</span>
+            <img
+              class="desktop-img nav"
+              src="./assets/coffee-cup.svg"
+              alt="coffee-cup"
+            />
+          </p>
+        </nav>
+        <p class="menu-active menu-link-hard">
+          <span class="desktop-img nonnav">Menu</span>
+          <img
+            class="desktop-img nonnav"
+            src="./assets/coffee-cup.svg"
+            alt="coffee-cup"
+          />
+          <button class="menu-mobile-button">
+            <span class="menu-mobile-button-content"></span>
+            <span class="menu-mobile-button-content"></span>
+          </button>
+        </p>
+      </header>
+      <main class="main">
+        <section class="section menu">
+          <h1 class="section-title section-title-menu">
+            Behind each of our cups hides an
+            <span class="mark">amazing surprise</span>
+          </h1>
+          <div class="modal">
+            <div class="modal-box">
+              <img src="assets/dessert1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="menu-categories">
+            <div
+              class="button button-border button-preview active coffee"
+              data-tab-section="tab-coffee"
+            >
+              <div class="button-circle">
+                <img src="./assets/coffee.png" alt="coffee" />
+              </div>
+              <div class="button-name">Coffee</div>
+            </div>
+            <div
+              class="button button-border button-preview tea"
+              data-tab-section="tab-tea"
+            >
+              <div class="button-circle">
+                <img src="./assets/tea.png" alt="tea" />
+              </div>
+              <div class="button-name">Tea</div>
+            </div>
+            <div
+              class="button button-border button-preview dessert"
+              data-tab-section="tab-dessert"
+            >
+              <div class="button-circle">
+                <img src="./assets/dessert.png" alt="dessert" />
+              </div>
+              <div class="button-name">Dessert</div>
+            </div>
+          </div>
+
+          <div class="preview-wrapper">
+            <div class="tab-coffee tab-content active-tab">
+              <div class="preview-item coffee active">
+                <div class="preview-view">
+                  <img
+                    src="./assets/coffee1.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Irish coffee</p>
+                    <p class="preview-item-description">
+                      Fragrant black coffee with Jameson Irish whiskey and
+                      whipped milk
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$7.00</p>
+                </div>
+              </div>
+              <div class="preview-item coffee active">
+                <div class="preview-view">
+                  <img
+                    src="./assets/coffee2.png"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Kahlua coffee</p>
+                    <p class="preview-item-description">
+                      Classic coffee with milk and Kahlua liqueur under a cap of
+                      frothed milk
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$7.00</p>
+                </div>
+              </div>
+              <div class="preview-item coffee active">
+                <div class="preview-view">
+                  <img
+                    src="./assets/coffee3.png"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Honey raf</p>
+                    <p class="preview-item-description">
+                      Espresso with frothed milk, cream and aromatic honey
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$5.50</p>
+                </div>
+              </div>
+              <div class="preview-item coffee active">
+                <div class="preview-view">
+                  <img
+                    src="./assets/coffee4.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Ice cappuccino</p>
+                    <p class="preview-item-description">
+                      Cappuccino with soft thick foam in summer version with ice
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$5.00</p>
+                </div>
+              </div>
+              <div class="preview-item coffee active">
+                <div class="preview-view">
+                  <img
+                    src="./assets/coffee5.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Espresso</p>
+                    <p class="preview-item-description">Classic black coffee</p>
+                  </div>
+                  <p class="preview-item-price">$4.50</p>
+                </div>
+              </div>
+              <div class="preview-item coffee active">
+                <div class="preview-view">
+                  <img
+                    src="./assets/coffee6.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Latte</p>
+                    <p class="preview-item-description">
+                      Espresso coffee with the addition of steamed milk and
+                      dense milk foam
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$5.50</p>
+                </div>
+              </div>
+              <div class="preview-item coffee active">
+                <div class="preview-view">
+                  <img
+                    src="./assets/coffee7.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Latte macchiato</p>
+                    <p class="preview-item-description">
+                      Espresso with frothed milk and chocolate
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$5.50</p>
+                </div>
+              </div>
+              <div class="preview-item coffee active">
+                <div class="preview-view">
+                  <img
+                    src="./assets/coffee8.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Coffee with cognac</p>
+                    <p class="preview-item-description">
+                      Fragrant black coffee with cognac and whipped cream
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$6.50</p>
+                </div>
+              </div>
+              <div id="toggleButton" class="button-mobile">
+                <svg class="button-mobile-arrow" fill="none">
+                  <path
+                    d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <!-- end of coffee items -->
+            <div class="tab-tea tab-content">
+              <div class="preview-item tea">
+                <div class="preview-view">
+                  <img
+                    src="assets/tea1.jpg"
+                    alt="preview tea image"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Moroccan</p>
+                    <p class="preview-item-description">
+                      Fragrant black coffee with Jameson Irish whiskey and
+                      whipped milk
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$4.50</p>
+                </div>
+              </div>
+              <div class="preview-item tea">
+                <div class="preview-view">
+                  <img
+                    src="./assets/tea2.jpg"
+                    alt="preview tea"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Ginger</p>
+                    <p class="preview-item-description">
+                      Original black tea with fresh ginger, lemon and honey
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$5.00</p>
+                </div>
+              </div>
+              <div class="preview-item tea">
+                <div class="preview-view">
+                  <img
+                    src="./assets/tea3.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Cranberry</p>
+                    <p class="preview-item-description">
+                      Invigorating black tea with cranberry and honey
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$5.00</p>
+                </div>
+              </div>
+              <div class="preview-item tea">
+                <div class="preview-view">
+                  <img
+                    src="./assets/tea4.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Sea buckthorn</p>
+                    <p class="preview-item-description">
+                      Toning sweet black tea with sea buckthorn, fresh thyme and
+                      cinnamon
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$5.50</p>
+                </div>
+              </div>
+              <div id="toggleButton-tea" class="button-mobile">
+                <svg class="button-mobile-arrow" fill="none">
+                  <path
+                    d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <!-- end of tea items -->
+            <div class="tab-dessert tab-content">
+              <div class="preview-item dessert">
+                <div class="preview-view">
+                  <img
+                    src="./assets/dessert1.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Marble cheesecake</p>
+                    <p class="preview-item-description">
+                      Philadelphia cheese with lemon zest on a light sponge cake
+                      and red currant jam
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$3.50</p>
+                </div>
+              </div>
+              <div class="preview-item dessert">
+                <div class="preview-view">
+                  <img
+                    src="./assets/dessert2.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Red velvet</p>
+                    <p class="preview-item-description">
+                      Layer cake with cream cheese frosting
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$4.00</p>
+                </div>
+              </div>
+              <div class="preview-item dessert">
+                <div class="preview-view">
+                  <img
+                    src="./assets/dessert3.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Cheesecakes</p>
+                    <p class="preview-item-description">
+                      Soft cottage cheese pancakes with sour cream and fresh
+                      berries and sprinkled with powdered sugar
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$4.50</p>
+                </div>
+              </div>
+              <div class="preview-item dessert">
+                <div class="preview-view">
+                  <img
+                    src="./assets/dessert4.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Creme brulee</p>
+                    <p class="preview-item-description">
+                      Delicate creamy dessert in a caramel basket with wild
+                      berries
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$4.00</p>
+                </div>
+              </div>
+              <div class="preview-item dessert">
+                <div class="preview-view">
+                  <img
+                    src="./assets/dessert5.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Pancakes</p>
+                    <p class="preview-item-description">
+                      Tender pancakes with strawberry jam and fresh strawberries
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$4.50</p>
+                </div>
+              </div>
+              <div class="preview-item dessert">
+                <div class="preview-view">
+                  <img
+                    src="./assets/dessert6.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Honey cake</p>
+                    <p class="preview-item-description">
+                      Classic honey cake with delicate custard
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$4.50</p>
+                </div>
+              </div>
+              <div class="preview-item dessert">
+                <div class="preview-view">
+                  <img
+                    src="./assets/dessert7.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Chocolate cake</p>
+                    <p class="preview-item-description">
+                      Cake with hot chocolate filling and nuts with dried
+                      apricots
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$5.50</p>
+                </div>
+              </div>
+              <div class="preview-item dessert">
+                <div class="preview-view">
+                  <img
+                    src="./assets/dessert8.jpg"
+                    alt="preview"
+                    class="preview-item-img"
+                  />
+                </div>
+                <div class="preview-item-body">
+                  <div class="preview-item-content">
+                    <p class="preview-item-title">Black forest</p>
+                    <p class="preview-item-description">
+                      A combination of thin sponge cake with cherry jam and
+                      light chocolate mousse
+                    </p>
+                  </div>
+                  <p class="preview-item-price">$6.50</p>
+                </div>
+              </div>
+              <div id="toggleButton-dessert" class="button-mobile">
+                <svg class="button-mobile-arrow" fill="none">
+                  <path
+                    d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <!-- end of dessert items -->
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contact-us">
+        <div class="footer-description">
+          <h2 class="section-title section-title-footer">
+            Sip, Savor, Smile. <span class="mark">It’s coffee time!</span>
+          </h2>
+          <div class="footer-socials">
+            <button class="button button-round button-reverse">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <button class="button button-round button-reverse">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                  stroke="#E1D4C9"
+                ></path>
+                <path
+                  d="M17.5 6.51L17.51 6.49889"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+            <button class="button button-round button-reverse">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="footer-contacts">
+          <p class="footer-title">Contact us</p>
+          <div class="footer-contacts-wrap">
+            <a
+              href="https://www.google.lv/maps/place/United+States/@39.8493314,-99.6101734,6z/data=!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891!16zL20vMDljN3cw?entry=ttu"
+              class="footer-link footer-link-pin"
+            >
+              <img src="./assets/pin-alt.svg" alt="coffee-cup" />
+              <span>8558 Green Rd., LA</span>
+            </a>
+            <a href="tel:+1(603)555-0123" class="footer-link footer-link-phone">
+              <img src="./assets/phone.svg" alt="coffee-cup" />
+              <span>+1 (603) 555-0123</span>
+            </a>
+            <p class="footer-line">
+              <img src="./assets/clock.svg" alt="coffee-cup" />
+              <span>Mon-Sat: 9:00 AM – 23:00 PM</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
